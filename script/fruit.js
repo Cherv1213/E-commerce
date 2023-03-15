@@ -15,19 +15,16 @@ const basket = document.querySelector('.basket-modal');
        
           openModal.addEventListener('click',function(e){
              modalBody.classList.add('open');
-             document.body.classList.add('lock');
           });
 
           closeX.addEventListener('click',function(e){
               modalBody.classList.remove('open');
-              document.body.classList.remove('lock');
           });
           
           modalBody.addEventListener('click',(e)=>{
             const click = e.composedPath().includes(basket);
            if(!click){
             modalBody.classList.remove('open');
-            document.body.classList.remove('lock');
            }
           })
     };

@@ -1,5 +1,3 @@
-
-
 const link = document.querySelector('.middle__image');
 
 link.addEventListener('click', function(event){
@@ -15,11 +13,8 @@ const basket = document.querySelector('.basket-modal');
  openClose();
 
     function openClose(){
-
-       
           openModal.addEventListener('click',function(e){
              modalBody.classList.add('open');
-             document.body.classList.add('lock');
              
           });
 
@@ -27,14 +22,12 @@ const basket = document.querySelector('.basket-modal');
 
           closeX.addEventListener('click',function(e){
               modalBody.classList.remove('open');
-              document.body.classList.remove('lock');
           });
           
           modalBody.addEventListener('click',(e)=>{
             const click = e.composedPath().includes(basket);
            if(!click){
             modalBody.classList.remove('open');
-            document.body.classList.remove('lock');
            }
           })
           calcCardPrice();

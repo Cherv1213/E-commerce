@@ -1,804 +1,1016 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-      <link rel="icon" href="" type="image/gif" sizes="16x16">
-      <link rel="stylesheet" href="css/main.css">      
-      <title>E-comerce</title>
-   </head>
-<body>
-   <div class="wrapper">
-<header>
-   <div class="header container">
-      <div class="header__top top">
-         <ul class="top-contacts">
-            <li class="contact__item">
-               <a href="#" class="contact__link link__green">Chat with us</a>
-            </li>
-            <li class="contact__item">
-               <a href="tel:+420336775664" class="contact__link">+420 336 775 664</a>
-            </li>
-            <li class="contact__item">
-               <a href="mailto:info@freshnesecom.com" target="_blank" class="contact__link">info@freshnesecom.com</a>
-            </li>
-         </ul>
-         <nav class="top__navigation">
-            <ul class="navigation__list">
-               <li class="navigation__item">
-                  <a href="#" target="_blank" class="navigation__link link__green">Blog</a>
-               </li>
-               <li class="navigation__item">
-                  <a href="#" target="_blank" class="navigation__link link__green">About Us</a>
-               </li>
-               <li class="navigation__item">
-                  <a href="#" target="_blank" class="navigation__link link__green">Careers</a>
-               </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>E-comerce</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header container">
+          <div class="header__top top">
+            <ul class="top-contacts">
+              <li class="contact__item">
+                <a href="#" class="contact__link link__green">Chat with us</a>
+              </li>
+              <li class="contact__item">
+                <a href="tel:+420336775664" class="contact__link"
+                  >+420 336 775 664</a
+                >
+              </li>
+              <li class="contact__item">
+                <a
+                  href="mailto:info@freshnesecom.com"
+                  target="_blank"
+                  class="contact__link"
+                  >info@freshnesecom.com</a
+                >
+              </li>
             </ul>
-         </nav>
-      </div>
-      <div class="header__middle middle">
-         <a href="../index.html" class="middle__image">
-         <img src="image/logo.svg" alt="">
-         </a>
+            <nav class="top__navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="navigation__link link__green"
+                    >Blog</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="navigation__link link__green"
+                    >About Us</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="navigation__link link__green"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__middle middle">
+            <a href="../index.html" class="middle__image">
+              <img src="image/logo.svg" alt="" />
+            </a>
             <form action="#" method="#" class="search-form">
-               <div class="select__wrapper">
-               <select name="categories" id="" class="form-select">
+              <div class="select__wrapper">
+                <select name="categories" id="" class="form-select">
                   <option value="All">All categories</option>
                   <option value="gagaga">gagaga</option>
                   <option value="tatatat">tatatat</option>
                   <option value="shashasha">shashasha</option>
-               </select> 
-            </div>
-               <input type="text" class="search__input" placeholder="Search Products, categories ...">
-               <button class="search__button" type="button"></button>
+                </select>
+              </div>
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search Products, categories ..."
+              />
+              <button class="search__button" type="button"></button>
             </form>
-         <div class="header__user user">
-               <a href="#" class="user__profile">
-                  <img src="image/header/user.svg" alt="">
-               </a>
-                  <div class="user__basket">
-                    <img src="image/header/basket.svg" alt="">
-                     <p class="basket__amount">2</p>
+            <div class="header__user user">
+              <a href="#" class="user__profile">
+                <img src="image/header/user.svg" alt="" />
+              </a>
+              <div class="user__basket">
+                <img src="image/header/basket.svg" alt="" />
+                <p class="basket__amount">2</p>
+              </div>
+
+              <div class="bkg-modal">
+                <div class="basket-modal">
+                  <h3 class="modal__title">Shopping cart</h3>
+                  <div class="modal__body"></div>
+                  <div class="modal__total">
+                    <div class="total__subtotal">
+                      <h4>Subtotal</h4>
+                      <span class="total__total-price">0</span>
+                      <span>USD</span>
+                    </div>
+                    <div class="total__buttons">
+                      <button class="continue close-modal">
+                        Continue shopping
+                      </button>
+                      <button class="Checkout">Go to Checkout</button>
+                    </div>
                   </div>
-
-
-                  <div class="bkg-modal">
-                     <div class="basket-modal">
-                        <h3 class="modal__title">Shopping cart</h3>
-                        <div class="modal__body">
-
-                        </div>
-                        <div class="modal__total">
-                           <div class="total__subtotal">
-                              <h4>Subtotal</h4>
-                              <span class="total__total-price">0</span>
-                              <span>USD</span>
-                           </div>
-                           <div class="total__buttons">
-                              <button class="continue close-modal">Continue shopping</button>
-                              <button class="Checkout">Go to Checkout</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-
-         </div>
-      </div>
-
-   </div>
-   <section class="chapters">
-      <div class="container">
-      <ul class="chapter__list">
-         <li>
-            <a href="#">Bakery</a>
-         </li>
-         <li>
-           <a class="link-fruit" href="fruits/fruit.html">Fruit and vegetables</a> 
-         </li>
-         <li>
-            <a href="#">Meat and fish</a>
-         </li>
-         <li>
-            <a href="#">Drinks</a>
-         </li>
-         <li>
-            <a href="#">Kitchen</a>
-         </li>
-         <li>
-            <a href="#">Special nutrition</a>
-         </li>
-         <li>
-            <a href="#">Baby</a>
-         </li>
-         <li>
-            <a href="#">Pharmacy</a>
-         </li>
-      </ul>
-   </div>
-   </section>
-</header>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="chapters">
+          <div class="container">
+            <ul class="chapter__list">
+              <li>
+                <a href="#">Bakery</a>
+              </li>
+              <li>
+                <a class="link-fruit" href="fruits/fruit.html"
+                  >Fruit and vegetables</a
+                >
+              </li>
+              <li>
+                <a href="#">Meat and fish</a>
+              </li>
+              <li>
+                <a href="#">Drinks</a>
+              </li>
+              <li>
+                <a href="#">Kitchen</a>
+              </li>
+              <li>
+                <a href="#">Special nutrition</a>
+              </li>
+              <li>
+                <a href="#">Baby</a>
+              </li>
+              <li>
+                <a href="#">Pharmacy</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </header>
       <main>
-         
-         <!--------------------------------------------------------------------->
-
-         <section class="category-menu loyut container">
-            <div class="menu__block">
-               <h4 class="title">Category menu</h4>
-               <ul class="menu__list">
-                  <li data-tab="#tab_6" class="tab__item">Bakery</li>
-                  <li data-tab="#tab_7" class="tab__item">Fruit and vegetables</li>
-                  <li data-tab="#tab_8" class="tab__item">Meat and fish</li>
-                  <li data-tab="#tab_9" class="tab__item">Drinks</li>
-                  <li data-tab="#tab_10" class="tab__item">Kitchen</li>
-               </ul>
-               <a href="#" class="menu__button">More categories</a>
+        <!--------------------------------------------------------------------->
+        <section class="category-menu loyut container">
+          <div class="menu__block">
+            <h4 class="title">Category menu</h4>
+            <ul class="menu__list">
+              <li data-tab="#tab_6" class="tab__item">Bakery</li>
+              <li data-tab="#tab_7" class="tab__item">Fruit and vegetables</li>
+              <li data-tab="#tab_8" class="tab__item">Meat and fish</li>
+              <li data-tab="#tab_9" class="tab__item">Drinks</li>
+              <li data-tab="#tab_10" class="tab__item">Kitchen</li>
+            </ul>
+            <a href="#" class="menu__button">More categories</a>
+          </div>
+          <div class="category-menu__content">
+            <div id="tab_6" class="tab-content">
+              <article class="category-menu__article article">
+                <h4 class="article__subtitle">Banner subfocus</h4>
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
+              <article class="category-menu__article article">
+                <h4 class="article__subtitle">Banner subfocus</h4>
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
             </div>
-            <div class="category-menu__content">
-               <div id="tab_6" class="tab-content">
-                  <article class="category-menu__article article">
-                     <h4 class="article__subtitle">Banner subfocus</h4>
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-                  <article class="category-menu__article article">
-                     <h4 class="article__subtitle">Banner subfocus</h4>
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-               </div>
-               <div id="tab_7" class="tab-content">
-                  <article class="category-menu__article article">
-                     <h4 class="article__subtitle">Banner subfocus</h4>
-                  </article>
-                  <article class="category-menu__article article">
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-               </div>
-               <div id="tab_8" class="tab-content">
-                  <article class="category-menu__article article">
-                     <h4 class="article__subtitle">Banner subfocus</h4>
-                  </article>
-               </div>
-               <div id="tab_9" class="tab-content">
-                  <article class="category-menu__article article">
-                     <h4 class="article__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, officia reiciendis vero amet rerum sit sequi aperiam consequatur facilis, quidem doloribus minus quam enim eaque doloremque quis nemo eos quo.</h4>
-                  </article>
-                  <article class="category-menu__article article">
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-               </div>
-               <div id="tab_10" class="tab-content">
-                  <article class="category-menu__article article">
-                     <h4 class="article__subtitle">Banner subfocus</h4>
-                  </article>
-                  <article class="category-menu__article article">
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-                  <article class="category-menu__article article">
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-                  <article class="category-menu__article article">
-                     <h3 class="article__title">Space for heading</h3>
-                     <a href="#" class="article__button">Read recepies</a>
-                  </article>
-               </div>
+            <div id="tab_7" class="tab-content">
+              <article class="category-menu__article article">
+                <h4 class="article__subtitle">Banner subfocus</h4>
+              </article>
+              <article class="category-menu__article article">
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
             </div>
-         </section>
+            <div id="tab_8" class="tab-content">
+              <article class="category-menu__article article">
+                <h4 class="article__subtitle">Banner subfocus</h4>
+              </article>
+            </div>
+            <div id="tab_9" class="tab-content">
+              <article class="category-menu__article article">
+                <h4 class="article__subtitle">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Architecto, officia reiciendis vero amet rerum sit sequi
+                  aperiam consequatur facilis, quidem doloribus minus quam enim
+                  eaque doloremque quis nemo eos quo.
+                </h4>
+              </article>
+              <article class="category-menu__article article">
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
+            </div>
+            <div id="tab_10" class="tab-content">
+              <article class="category-menu__article article">
+                <h4 class="article__subtitle">Banner subfocus</h4>
+              </article>
+              <article class="category-menu__article article">
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
+              <article class="category-menu__article article">
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
+              <article class="category-menu__article article">
+                <h3 class="article__title">Space for heading</h3>
+                <a href="#" class="article__button">Read recepies</a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!--------------------------------------------------------------------->
+        <section class="best loyut container">
+          <div class="menu__block">
+            <h4 class="title">Best selling products</h4>
+            <ul class="menu__list">
+              <li class="menu__tab" data-tab="#tab_1">Kitchen</li>
+              <li class="menu__tab" data-tab="#tab_2">Meat and fish</li>
+              <li class="menu__tab" data-tab="#tab_3">Special nutrition</li>
+              <li class="menu__tab" data-tab="#tab_4">Pharmacy</li>
+              <li class="menu__tab" data-tab="#tab_5">Baby</li>
+            </ul>
+            <a href="#" class="menu__button">More products</a>
+          </div>
+          <div class="best__body">
+            <div class="body__tabs" id="tab_1">
+              <article class="best__article" data-id="01">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="02">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="03">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="body__tabs" id="tab_2">
+              <article class="best__article" data-id="04">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="05">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="body__tabs" id="tab_3">
+              <article class="best__article" data-id="06">
+                <a href="#" class="best__image"
+                  ><img
+                    src="../image/best/card.png"
+                    alcontentt=""
+                    class="best__image"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veritatis molestiae, hic asperiores sequi iure nesciunt quo
+                  saepe tempora dolorem minus, laborum quidem modi pariatur
+                  iste? Totam esse pariatur hic nobis!
+                </p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="07">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="08">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="body__tabs" id="tab_4">
+              <article class="best__article" data-id="09">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="10">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="11">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="body__tabs" id="tab_5">
+              <article class="best__article" data-id="12">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="13">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="14">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!--------------------------------------------------------------------->
+        <section class="best loyut container">
+          <div class="menu__block">
+            <h4 class="title">Best from Farmers</h4>
+            <ul class="menu__list">
+              <li class="second" data-tab="#tab_11">Carrots</li>
+              <li class="second" data-tab="#tab_12">Tomatoes</li>
+              <li class="second" data-tab="#tab_13">Potatoes</li>
+              <li class="second" data-tab="#tab_14">Chicken</li>
+              <li class="second" data-tab="#tab_15">Pork</li>
+            </ul>
+            <a href="#" class="menu__button">More products</a>
+          </div>
+          <div class="best__body">
+            <div class="second-body" id="tab_11">
+              <article class="best__article" data-id="15">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="16">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="17">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="second-body" id="tab_12">
+              <article class="best__article" data-id="18">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="19">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="second-body" id="tab_13">
+              <article class="best__article" data-id="20">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veritatis molestiae, hic asperiores sequi iure nesciunt quo
+                  saepe tempora dolorem minus, laborum quidem modi pariatur
+                  iste? Totam esse pariatur hic nobis!
+                </p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="21">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="22">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="second-body" id="tab_14">
+              <article class="best__article" data-id="23">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="24">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="25">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+            <div class="second-body" id="tab_15">
+              <article class="best__article" data-id="26">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="27">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+              <article class="best__article" data-id="28">
+                <a href="#" class="best__image"
+                  ><img
+                    src="image/best/card.png"
+                    alt="content"
+                    class="best__img"
+                /></a>
+                <span class="discount">- 36 %</span>
+                <h4 class="best__title">Product Title</h4>
+                <p class="best__text">Space for a small product description</p>
+                <div class="best__price">
+                  <p class="best__number">1.48 USD</p>
+                  <span>48.56</span>
+                  <button class="best__button">Buy now</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
         <!--------------------------------------------------------------------->
 
-         <section class="best loyut container">
-            <div class="menu__block">
-               <h4 class="title">Best selling products</h4>
-               <ul class="menu__list">
-                  <li  class="menu__tab" data-tab="#tab_1">Kitchen</li>
-                  <li  class="menu__tab" data-tab="#tab_2">Meat and fish</li>
-                  <li class="menu__tab" data-tab="#tab_3">Special nutrition</li>
-                  <li class="menu__tab" data-tab="#tab_4">Pharmacy</li>
-                  <li  class="menu__tab" data-tab="#tab_5">Baby</li>
-               </ul>
-               <a href="#" class="menu__button">More products</a>
+        <section class="customers">
+          <div class="customers__head container">
+            <h2 class="customers__title title">Our customers says</h2>
+            <a href="#" class="customers__button">Button</a>
+          </div>
+          <div class="customers-content">
+            <div class="customers-swiper swiper-container">
+              <div class="customers-wrapper swiper-wrapper">
+                <div class="customers-slide swiper-slide">
+                  <blockquote class="customers__blockquote">
+                    “ This is an super space for your customers qoute. Don’t
+                    worry it works smooth as pie. You will get all what you need
+                    by writiing a text here “
+                  </blockquote>
+                  <p class="customers__name">Name and Surname</p>
+                </div>
+                <div class="customers-slide swiper-slide">
+                  <blockquote class="customers__blockquote">
+                    “ This is an super space for your customers qoute. Don’t
+                    worry it works smooth as pie. You will get all what you need
+                    by writiing a text here Don’t worry it works smooth as pie.
+                    You will get all what you need by writiing a text here Don’t
+                    worry it works smooth as pie. You will get all what you need
+                    by writiing a text here“
+                  </blockquote>
+                  <p class="customers__name">Name and Surname</p>
+                </div>
+                <div class="customers-slide swiper-slide">
+                  <blockquote class="customers__blockquote">
+                    “ This is an super space for your customers qoute. Don’t
+                    worry it works smooth as pie. You will get all what you need
+                    by writiing a text here “
+                  </blockquote>
+                  <p class="customers__name">Name and Surname</p>
+                </div>
+                <div class="customers-slide swiper-slide">
+                  <blockquote class="customers__blockquote">
+                    “ This is an super space for your customers qoute. Don’t
+                    worry it works smooth as pie. You will get all what you need
+                    by writiing a text here “
+                  </blockquote>
+                  <p class="customers__name">Name and Surname</p>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
-            <div class="best__body">
-               <div class="body__tabs" id="tab_1">
-                  <article class="best__article" data-id="01">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="02">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="03">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
+          </div>
+        </section>
+        <!--------------------------------------------------------------------->
+        <section class="headline container">
+          <div class="customers__head">
+            <h2 class="customers__title title">Section Headline</h2>
+            <a href="#" class="customers__button">Button</a>
+          </div>
+          <div class="headline__body">
+            <article class="best__article">
+               <a href="#" class="best__image"
+                 ><img src="image/best/card.png" alt="content" class="best__img"
+               /></a>
+               <span class="discount">- 36 %</span>
+               <h4 class="best__title">Product Title</h4>
+               <p class="best__text">Space for a small product description</p>
+               <div class="best__price">
+                 <p class="best__number">1.48 USD</p>
+                 <button class="best__button">Buy now</button>
                </div>
-               <div class="body__tabs" id="tab_2">
-                  <article class="best__article" data-id="04">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="05">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div  class="body__tabs" id="tab_3">
-                  <article class="best__article" data-id="06">
-                     <a href="#" class="best__image"><img src="../image/best/card.png" alcontentt="" class="best__image"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis molestiae, hic asperiores sequi iure nesciunt quo saepe tempora dolorem minus, laborum quidem modi pariatur iste? Totam esse pariatur hic nobis! </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="07">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="08">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div  class="body__tabs" id="tab_4">
-                  <article class="best__article" data-id="09">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="10">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="11">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div  class="body__tabs" id="tab_5">
-                  <article class="best__article" data-id="12">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="13">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="14">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-            </div>
-         </section>
-         <!--------------------------------------------------------------------->
+             </article>
+            <article class="best__article">
+              <a href="#" class="best__image"
+                ><img src="image/best/card.png" alt="content" class="best__img"
+              /></a>
+              <span class="discount">- 36 %</span>
+              <h4 class="best__title">Product Title</h4>
+              <p class="best__text">Space for a small product description</p>
+              <div class="best__price">
+                <p class="best__number">1.48 USD</p>
+                <button class="best__button">Buy now</button>
+              </div>
+            </article>
+            <article class="best__article">
+              <a href="#" class="best__image"
+                ><img src="image/best/card.png" alt="content" class="best__img"
+              /></a>
+              <span class="discount">- 36 %</span>
+              <h4 class="best__title">Product Title</h4>
+              <p class="best__text">Space for a small product description</p>
+              <div class="best__price">
+                <p class="best__number">1.48 USD</p>
+                <button class="best__button">Buy now</button>
+              </div>
+            </article>
+            <article class="best__article">
+              <a href="#" class="best__image"
+                ><img src="image/best/card.png" alt="content" class="best__img"
+              /></a>
+              <span class="discount">- 36 %</span>
+              <h4 class="best__title">Product Title</h4>
+              <p class="best__text">Space for a small product description</p>
+              <div class="best__price">
+                <p class="best__number">1.48 USD</p>
+                <button class="best__button">Buy now</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!--------------------------------------------------------------------->
 
-         <section class="best loyut container">
-            <div class="menu__block">
-               <h4 class="title">Best from Farmers</h4>
-               <ul class="menu__list">
-                  <li  class=" second" data-tab="#tab_11">Carrots</li>
-                  <li  class= "second" data-tab="#tab_12">Tomatoes</li>
-                  <li class=" second" data-tab="#tab_13">Potatoes</li>
-                  <li class=" second" data-tab="#tab_14">Chicken</li>
-                  <li  class=" second" data-tab="#tab_15">Pork</li>
-               </ul>
-               <a href="#" class="menu__button">More products</a>
+        <section class="blog container">
+          <div class="customers__head">
+            <h2 class="customers__title title">Read our Blog posts</h2>
+            <a href="#" class="customers__button">Go to Blog</a>
+          </div>
+          <div class="blog__content">
+            <div class="content__dinner">
+              <img src="image/blog/dinner.png" alt="dinner" />
+              <span class="dinner__tips">Dinner tips</span>
+              <div class="dinner__text">
+                <h4 class="big-title">
+                  Our chef tips for a great and tasty dinner ready in 20 minutes
+                </h4>
+                <p class="author">Author<span>17. 6. 2020</span></p>
+              </div>
             </div>
-            <div class="best__body">
-               <div class="second-body" id="tab_11">
-                  <article class="best__article" data-id="15">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="16">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="17">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div class="second-body" id="tab_12">
-                  <article class="best__article" data-id="18">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="19">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div  class=" second-body" id="tab_13">
-                  <article class="best__article" data-id="20">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis molestiae, hic asperiores sequi iure nesciunt quo saepe tempora dolorem minus, laborum quidem modi pariatur iste? Totam esse pariatur hic nobis! </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="21">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="22">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div  class=" second-body" id="tab_14">
-                  <article class="best__article" data-id="23">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="24">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="25">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
-               <div  class=" second-body" id="tab_15">
-                  <article class="best__article" data-id="26">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="27">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-                  <article class="best__article" data-id="28">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                     <span class="discount">- 36 %</span>
-                     <h4 class="best__title">Product Title</h4>
-                     <p class="best__text">Space for a small product description </p>
-                     <div class="best__price">
-                        <p class="best__number">1.48 USD</p>
-                        <span>48.56</span>
-                        <button class="best__button">Buy now</button>
-                     </div>
-                  </article>
-               </div>
+            <div class="content__vegetables">
+              <img src="image/best/card.png" alt="" />
+              <div class="vegetables__text">
+                <p class="vegetables__tips">Vegetable</p>
+                <h4 class="vegetables__title">
+                  Which vegetable your family will love and want’s eat each day
+                </h4>
+                <p class="author">Author<span>15. 6. 2020</span></p>
+              </div>
             </div>
-         </section>
-         <!--------------------------------------------------------------------->
-
-         <section class="customers ">
-            <div class="customers__head container">
-               <h2 class="customers__title title">Our customers says</h2>
-               <a href="#" class="customers__button">Button</a>
+            <div class="content__recepts">
+              <div class="recepts__item">
+                <div class="recepts__text">
+                  <h4 class="recepts__title">
+                    Salat is kinda good start to your morning routines
+                  </h4>
+                  <p class="author">Author<span>17. 6. 2020</span></p>
+                </div>
+                <img src="image/blog/salad.png" alt="salad" />
+              </div>
+              <div class="recepts__item">
+                <div class="recepts__text">
+                  <h4 class="recepts__title">
+                    Salat is kinda good start to your morning routines
+                  </h4>
+                  <p class="author">Author<span>17. 6. 2020</span></p>
+                </div>
+                <img src="image/blog/salad.png" alt="salad" />
+              </div>
+              <div class="recepts__item">
+                <div class="recepts__text">
+                  <h4 class="recepts__title">
+                    Salat is kinda good start to your morning routines
+                  </h4>
+                  <p class="author">Author<span>17. 6. 2020</span></p>
+                </div>
+                <img src="image/blog/salad.png" alt="salad" />
+              </div>
             </div>
-            <div class="customers-content">
-               <div class="customers-swiper swiper-container">
-                  <div class="customers-wrapper swiper-wrapper">
-                     <div class="customers-slide swiper-slide">
-                        <blockquote class="customers__blockquote">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</blockquote>
-                        <p class="customers__name">Name and Surname</p>
-                     </div>
-                     <div class="customers-slide swiper-slide">
-                        <blockquote class="customers__blockquote">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here  Don’t worry it works smooth as pie. You will get all what you need by writiing a text here  Don’t worry it works smooth as pie. You will get all what you need by writiing a text here“</blockquote>
-                        <p class="customers__name">Name and Surname</p>
-                     </div>
-                     <div class="customers-slide swiper-slide">
-                        <blockquote class="customers__blockquote">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</blockquote>
-                        <p class="customers__name">Name and Surname</p>
-                     </div>
-                     <div class="customers-slide swiper-slide">
-                        <blockquote class="customers__blockquote">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</blockquote>
-                        <p class="customers__name">Name and Surname</p>
-                     </div>
-                  </div>
-                      <!-- If we need navigation buttons -->
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-               </div>
-            </div>
-         </section>
-                  <!--------------------------------------------------------------------->
-
-         <section class="headline container">
-            <div class="customers__head">
-               <h2 class="customers__title title">Section Headline</h2>
-               <a href="#" class="customers__button">Button</a>
-            </div>
-            <div class="headline__body">
-               <article class="best__article" data-id="29">
-                  <a href="#"><img src="image/best/card.png" alt="" class="best__image"></a>
-                  <span class="discount">- 36 %</span>
-                  <h4 class="best__title">Product Title</h4>
-                  <p class="best__text">Space for a small product description </p>
-                  <div class="best__price">
-                     <p class="best__number">1.48 USD</p>
-                     <button class="best__button">Buy now</button>
-                  </div>
-               </article>
-               <article class="best__article" data-id="30">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                  <span class="discount">- 36 %</span>
-                  <h4 class="best__title">Product Title</h4>
-                  <p class="best__text">Space for a small product description </p>
-                  <div class="best__price">
-                     <p class="best__number">1.48 USD</p>
-                     <button class="best__button">Buy now</button>
-                  </div>
-               </article>
-               <article class="best__article" data-id="32">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                  <span class="discount">- 36 %</span>
-                  <h4 class="best__title">Product Title</h4>
-                  <p class="best__text">Space for a small product description </p>
-                  <div class="best__price">
-                     <p class="best__number">1.48 USD</p>
-                     <button class="best__button">Buy now</button>
-                  </div>
-               </article>
-               <article class="best__article" data-id="33">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
-                  <span class="discount">- 36 %</span>
-                  <h4 class="best__title">Product Title</h4>
-                  <p class="best__text">Space for a small product description </p>
-                  <div class="best__price">
-                     <p class="best__number">1.48 USD</p>
-                     <button class="best__button">Buy now</button>
-                  </div>
-               </article>
-            </div>
-         </section>
-                  <!--------------------------------------------------------------------->
-
-         <section class="blog container">
-                     <div class="customers__head">
-                        <h2 class="customers__title title">Read our Blog posts</h2>
-                        <a href="#" class="customers__button">Go to Blog</a>
-                     </div>
-                     <div class="blog__content">
-                        <div class="content__dinner">
-                           <img src="image/blog/dinner.png" alt="dinner">
-                           <span class="dinner__tips">Dinner tips</span>
-                           <div class="dinner__text">
-                              <h4 class="big-title">Our chef tips for a great and tasty dinner ready in 20 minutes</h4>
-                              <p class="author">Author<span>17. 6. 2020</span></p>
-                           </div>
-                        </div>
-                        <div class="content__vegetables">
-                           <img src="image/best/card.png" alt="">
-                           <div class="vegetables__text">
-                              <p class="vegetables__tips">Vegetable</p>
-                              <h4 class="vegetables__title">Which vegetable your family will love and want’s eat each day</h4>
-                              <p class="author">Author<span>15. 6. 2020</span></p>
-                           </div>
-                        </div>
-                        <div class="content__recepts">
-                           <div class="recepts__item">
-                              <div class="recepts__text">
-                                 <h4 class="recepts__title">Salat is kinda good start to your morning routines</h4>
-                                 <p class="author">Author<span>17. 6. 2020</span></p>
-                              </div>
-                              <img src="image/blog/salad.png" alt="salad">
-                           </div>
-                           <div class="recepts__item">
-                              <div class="recepts__text">
-                                 <h4 class="recepts__title">Salat is kinda good start to your morning routines</h4>
-                                 <p class="author">Author<span>17. 6. 2020</span></p>
-                              </div>
-                              <img src="image/blog/salad.png" alt="salad">
-                           </div>
-                           <div class="recepts__item">
-                              <div class="recepts__text">
-                                 <h4 class="recepts__title">Salat is kinda good start to your morning routines</h4>
-                                 <p class="author">Author<span>17. 6. 2020</span></p>
-                              </div>
-                              <img src="image/blog/salad.png" alt="salad">
-                           </div>
-                        </div>
-                     </div>
-                  </section>
+          </div>
+        </section>
       </main>
 
-<footer>
-   <div class="container">
-      <div class="footer-top">
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-      </div>
-      <div class="footer__midle">
-         <h4>Product tags</h4>
-         <ul class="midle__list">
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-
-         </ul>
-      </div>
-      <p class="copy">Copyright © 2020 YAYA.com</p>
-   </div>
-</footer>   </div>
-   <script src="script/basket.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   <script src="script/main.js"></script>
-</body>
-
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__midle">
+            <h4>Product tags</h4>
+            <ul class="midle__list">
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+            </ul>
+          </div>
+          <p class="copy">Copyright © 2020 YAYA.com</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/basket.js"></script>
+    <script src="script/main.js"></script>
+  </body>
 </html>
