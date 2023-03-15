@@ -1,0 +1,65 @@
+@import url(normalize.css);
+$clr-green:#6A983C;
+$font-fam:'Open Sans';
+$clr-smll-text:#575757;
+$clr-def:#151515;
+$clr--f5f5:#F5F5F5;
+$clr--f9f9:#F9F9F9;
+$pad-top-bot: clamp(1rem, 4vw,4rem);
+
+footer {
+   padding: $pad-top-bot 0;
+   line-height: 1.5;
+}
+.footer-top {
+   margin-bottom: 3rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+   gap: 1rem;
+}
+.footer__top-list {
+   display: grid;
+   gap: 1rem;
+
+   & li:nth-child(1) a{
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: $clr-def;
+   }
+   & li a {
+      font-weight: 400;
+      font-size: 14px;
+      color: $clr-green;
+   }
+}
+/*-------------------------------------------------------------------------------------------------*/
+.footer__midle {
+   margin-bottom: 3rem;
+   & h4{
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: $clr-def;
+      margin-bottom: 1rem;
+   }
+}
+
+.midle__list{
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+
+   & li a{
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: $clr-def;
+      padding: 4px 10px;
+      background-color: $clr--f5f5;
+      border-radius: 0.75rem;
+   }
+}
+
+.copy{
+   font-weight: 400;
+   font-size: 0.875rem;
+   color: $clr-def;
+}
