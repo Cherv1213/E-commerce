@@ -1,53 +1,41 @@
-const basketModal = document.querySelector('.modal__body');
+const basketModal = document.querySelector(".modal__body");
+const amountInBasket = document.querySelector(".basket__amount");
 
-function toggleStatus(){
+function toggleStatus() {
   const totalItems = basketModal.children.length;
-   console.log(totalItems);
-   
-};
+  amountInBasket.innerHTML = totalItems;
+}
 
-function calcCardPrice(){
-   const cardItems = document.querySelectorAll('.modal-card');
-   const totalPriceEl = document.querySelector('.total__total-price');
+function calcCardPrice() {
+  const cardItems = document.querySelectorAll(".modal-card");
+  const totalPriceEl = document.querySelector(".total__total-price");
 
-   let totalPrice = 0;
+  let totalPrice = 0;
 
-   cardItems.forEach(function(item){
-      
-      
-      const priceEl = item.querySelector('.best__number');
-      const priceNum = parseFloat(priceEl.innerText);
+  cardItems.forEach(function (item) {
+    const priceEl = item.querySelector(".best__number");
+    const priceNum = parseFloat(priceEl.innerText);
 
-      
-      totalPrice += priceNum;
+    totalPrice += priceNum;
    });
-
    totalPriceEl.innerText = parseFloat(totalPrice).toFixed(2);
-   console.log(totalPriceEl);
-   
-};
+}
 
-   
+window.addEventListener("click", function (event) {
+  if (event.target.classList.contains("best__button")) {
+    const card = event.target.closest(".best__article");
 
+    const prodactInfo = {
+      id: card.dataset.id,
+      imgSrc: card.querySelector(".best__image img").getAttribute("src"),
+      title: card.querySelector(".best__title").innerText,
+      price: card.querySelector(".best__number").innerText,
+    };
 
-window.addEventListener('click', function(event){
-   if(event.target.classList.contains('best__button')){
-      
-      const card = event.target.closest('.best__article');
-
-      const prodactInfo = {
-         id: card.dataset.id,
-         imgSrc: card.querySelector('.best__image').getAttribute('src'),
-         title: card.querySelector('.best__title').innerText,
-         price: card.querySelector('.best__number').innerText,
-      };
-     
-      
-     
-      const cardItemHTML = `
+    const cardItemHTML = `
       <article class="modal-card" data-id="${prodactInfo.id}">
                            <div class="card__left">
-                              <img src="../image/best/card.png" alt="image">
+                              <img src="${prodactInfo.imgSrc}" alt="image">
                               <div class="card__what-todo">
                                  <div class="card__item item-wish">Wishlist</div>
                                  <div class="card__item item-compare">Compare</div>
@@ -84,22 +72,20 @@ window.addEventListener('click', function(event){
                         </article>
                         `;
 
-      basketModal.insertAdjacentHTML('beforeend',cardItemHTML );
-      
-      toggleStatus();
-      calcCardPrice();
-      
-      const removeItem = document.querySelectorAll('.item-remove');
-      removeItem.forEach(function(item){
-         item.addEventListener('click',function (){
-            item.closest('.modal-card').remove();
-            
-            toggleStatus();
-            calcCardPrice();
-         });
+                        
+    basketModal.insertAdjacentHTML("beforeend", cardItemHTML);
+
+    toggleStatus();
+    calcCardPrice();
+    
+    const removeItem = document.querySelectorAll(".item-remove");
+    removeItem.forEach(function (item) {
+      item.addEventListener("click", function () {
+        item.closest(".modal-card").remove();
+         
+        toggleStatus();
+        calcCardPrice();
       });
-   };
-   
+    });
+  }
 });
-
-

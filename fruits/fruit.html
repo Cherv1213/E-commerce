@@ -1,747 +1,989 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="" type="image/gif" sizes="16x16">
-   <link rel="stylesheet" href="css/nouislider.css">
-   <link rel="stylesheet" href="css/fruit.css">
-   <title>Fruit and vegetables</title>
-</head>
-<body>
-   <div class="wrapper">
-<header>
-   <div class="header container">
-      <div class="header__top top">
-         <ul class="top-contacts">
-            <li class="contact__item">
-               <a href="#" class="contact__link link__green">Chat with us</a>
-            </li>
-            <li class="contact__item">
-               <a href="tel:+420336775664" class="contact__link">+420 336 775 664</a>
-            </li>
-            <li class="contact__item">
-               <a href="mailto:info@freshnesecom.com" target="_blank" class="contact__link">info@freshnesecom.com</a>
-            </li>
-         </ul>
-         <nav class="top__navigation">
-            <ul class="navigation__list">
-               <li class="navigation__item">
-                  <a href="#" target="_blank" class="navigation__link link__green">Blog</a>
-               </li>
-               <li class="navigation__item">
-                  <a href="#" target="_blank" class="navigation__link link__green">About Us</a>
-               </li>
-               <li class="navigation__item">
-                  <a href="#" target="_blank" class="navigation__link link__green">Careers</a>
-               </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="css/nouislider.css" />
+    <link rel="stylesheet" href="css/fruit.css" />
+    <title>Fruit and vegetables</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header container">
+          <div class="header__top top">
+            <ul class="top-contacts">
+              <li class="contact__item">
+                <a href="#" class="contact__link link__green">Chat with us</a>
+              </li>
+              <li class="contact__item">
+                <a href="tel:+420336775664" class="contact__link"
+                  >+420 336 775 664</a
+                >
+              </li>
+              <li class="contact__item">
+                <a
+                  href="mailto:info@freshnesecom.com"
+                  target="_blank"
+                  class="contact__link"
+                  >info@freshnesecom.com</a
+                >
+              </li>
             </ul>
-         </nav>
-      </div>
-      <div class="header__middle middle">
-         <a href="../index.html" class="middle__image">
-         <img src="image/logo.svg" alt="">
-         </a>
+            <nav class="top__navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="navigation__link link__green"
+                    >Blog</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="navigation__link link__green"
+                    >About Us</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="navigation__link link__green"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__middle middle">
+            <a href="../index.html" class="middle__image">
+              <img src="image/logo.svg" alt="" />
+            </a>
             <form action="#" method="#" class="search-form">
-               <div class="select__wrapper">
-               <select name="categories" id="" class="form-select">
+              <div class="select__wrapper">
+                <select name="categories" id="" class="form-select">
                   <option value="All">All categories</option>
                   <option value="gagaga">gagaga</option>
                   <option value="tatatat">tatatat</option>
                   <option value="shashasha">shashasha</option>
-               </select> 
-            </div>
-               <input type="text" class="search__input" placeholder="Search Products, categories ...">
-               <button class="search__button" type="button"></button>
+                </select>
+              </div>
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search Products, categories ..."
+              />
+              <button class="search__button" type="button"></button>
             </form>
-         <div class="header__user user">
-               <a href="#" class="user__profile">
-                  <img src="image/header/user.svg" alt="">
-               </a>
-                  <div class="user__basket">
-                    <img src="image/header/basket.svg" alt="">
-                     <p class="basket__amount">2</p>
-                  </div>
+            <div class="header__user user">
+              <a href="#" class="user__profile">
+                <img src="image/header/user.svg" alt="" />
+              </a>
+              <div class="user__basket">
+                <img src="image/header/basket.svg" alt="" />
+                <p class="basket__amount">0</p>
+              </div>
 
-                  <div class="bkg-modal">
-                     <div class="basket-modal">
-                        <h3 class="modal__title">Shopping cart</h3>
-                        <div class="modal__body">
-
-                        </div>
-                        <div class="modal__total">
-                           <div class="total__subtotal">
-                              <h4>Subtotal</h4>
-                              <span class="total__total-price">0</span>
-                              <span>USD</span>
-                           </div>
-                           <div class="total__buttons">
-                              <button class="continue close-modal">Continue shopping</button>
-                              <button class="Checkout">Go to Checkout</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-         </div>
-      </div>
-
-   </div>
-   <section class="chapters">
-      <div class="container">
-      <ul class="chapter__list">
-         <li>
-            <a href="#">Bakery</a>
-         </li>
-         <li>
-           <a class="link-fruit" href="fruits/fruit.html" style="color: red;">Fruit and vegetables</a> 
-         </li>
-         <li>
-            <a href="#">Meat and fish</a>
-         </li>
-         <li>
-            <a href="#">Drinks</a>
-         </li>
-         <li>
-            <a href="#">Kitchen</a>
-         </li>
-         <li>
-            <a href="#">Special nutrition</a>
-         </li>
-         <li>
-            <a href="#">Baby</a>
-         </li>
-         <li>
-            <a href="#">Pharmacy</a>
-         </li>
-      </ul>
-   </div>
-   </section>
-</header>
-      <main>
-         <div class="top-body container">
-            <h2>Fruit and vegetables</h2>
-            <div class="how-view">
-               <p class="tab-link grid" data-tabs="#data-1">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M13.334 1.33331H2.66732C1.93094 1.33331 1.33398 1.93027 1.33398 2.66665V13.3333C1.33398 14.0697 1.93094 14.6666 2.66732 14.6666H13.334C14.0704 14.6666 14.6673 14.0697 14.6673 13.3333V2.66665C14.6673 1.93027 14.0704 1.33331 13.334 1.33331Z" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                     <path d="M1.33398 8H14.6673" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                     <path d="M8 1.33331V14.6666" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  Grid view
-               </p>
-               <p class="tab-link list" data-tabs="#data-2">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M13.334 1.33331H2.66732C1.93094 1.33331 1.33398 1.93027 1.33398 2.66665V13.3333C1.33398 14.0697 1.93094 14.6666 2.66732 14.6666H13.334C14.0704 14.6666 14.6673 14.0697 14.6673 13.3333V2.66665C14.6673 1.93027 14.0704 1.33331 13.334 1.33331Z" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                     <path d="M1.33398 4.66663H14.6673" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                     <path d="M1.33398 8H14.6673" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                     <path d="M1.33398 11.3333H14.6673" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
-                     </svg>
-                  List view
-               </p>
-               <div class="prod-block">
-                  <span class="sml-green">21</span>
-                  <p class="prodacts">Products</p>
-               </div>
-            </div>
-         </div>
-         <div class="form__container container">
-            <form action="#" method="#" class="top-form">
-               <div class="filter__radio">
-                  <div class="filter__item">
-                     <label for="filter-radio-1" class="discr">Filtre text</label>
-                     <input id="filter-radio-1" class="radio" checked type="radio" name="howFilter" value="byType">
-                     <span class="fake"></span>
-                  </div>
-                  <div class="filter__item">
-                     <label for="filter-radio-2" class="discr">Filtre text</label>
-                     <input id="filter-radio-2" class="radio" type="radio" name="howFilter" value="byType">
-                     <span class="fake"></span>
-                  </div>
-               </div>
-               <div class="filter__checkbox">
-                  <input type="checkbox" name="ckeck" value="yes" id="checkbox-1" class="checkbox__input">
-                  <span class="checkbox__fake"></span>
-                  <label for="checkbox-1" class="discr">Filtre</label>
-                  <p class="nbm">Nbm</p>
-               </div>
-               <div class="filter__checkbox">
-                  <input type="checkbox" name="ckeck" value="yes" id="checkbox-2" class="checkbox__input">
-                  <span class="checkbox__fake"></span>
-                  <label for="checkbox-2" class="discr">Filtre</label>
-                  <p class="nbm">Nbm</p>
-               </div>
-               <div>
-                  <div class="filter__wrapper">
-                     <div class="filter__checkbox">
-                        <input type="checkbox" name="ckeck" value="yes" id="checkbox-3" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="checkbox-3" class="discr">Filtre</label>
-                        <p class="nbm">12</p>
-                     </div>
-                     <div class="filter__select">
-                        <select name="select" id="#" >
-                           <option value="1">1</option>
-                           <option value="2">2</option>
-                           <option value="3">3</option>
-                        </select>
-                     </div>
-                  </div>
-               </div>
-            </form>
-         </div>
-         <section class="shop__content">
-            <div class="shop-body container">
-               <div class="side__bar-open"><span></span></div>
-               <form class="side__bar">
-                  <div class="side-category def-list">
-                     <h4 class="title">Categories</h4>
-                     <div class="side-item">
-                        <p>Category name</p>
-                        <span class="sml-green">320</span>
-                     </div>
-                     <div class="side-item">
-                        <p>Category name</p>
-                        <span class="sml-green">320</span>
-                     </div>
-                     <div class="side-item">
-                        <p>Category name</p>
-                        <span class="sml-green">320</span>
-                     </div>
-                     <div class="side-item">
-                        <p>Category name</p>
-                        <span class="sml-green">320</span>
-                     </div>
-                  </div>
-                  <div class="side-brands def-list">
-                     <h4 class="title">Brands</h4>
-                     <div class="brands-item">
-                        <input type="checkbox" name="ckeck" value="yes" id="brands-1" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="brands-1" class="discr">Filtre by brand item</label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="checkbox" name="ckeck" value="yes" id="brands-2" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="brands-2" class="discr">Filtre by brand item</label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="checkbox" name="ckeck" value="yes" id="brands-3" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="brands-3" class="discr">Filtre by brand item</label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="checkbox" name="ckeck" value="yes" id="brands-4" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="brands-4" class="discr">Filtre by brand item</label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="checkbox" name="ckeck" value="yes" id="brands-5" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="brands-5" class="discr">Filtre by brand item</label>
-                     </div>
-                  </div>
-                  <div class="side__rating def-list">
-                     <h4 class="title">Rating</h4>
-                     <div class="brands-item">
-                        <input type="radio" checked name="ckeck" value="yes" id="rating-1" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="rating-1" class="discr">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                        </label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="radio" name="ckeck" value="yes" id="rating-2" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="rating-2" class="discr">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                        </label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="radio" name="ckeck" value="yes" id="rating-3" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="rating-3" class="discr">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                        </label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="radio" name="ckeck" value="yes" id="rating-4" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="rating-4" class="discr">
-                           <img src="image/star.svg" alt="">
-                           <img src="image/star.svg" alt="">
-                        </label>
-                     </div>
-                     <div class="brands-item">
-                        <input type="radio" name="ckeck" value="yes" id="rating-5" class="checkbox__input">
-                        <span class="checkbox__fake"></span>
-                        <label for="rating-5" class="discr">
-                           <img src="image/star.svg" alt="">
-                        </label>
-                     </div>
-                  </div>
-                  <div class="side__price">
-                     <h4 class="title">Price</h4>
-                     <div class="price__slider" id="range-slider"></div>
-                     <div class="price__inputs">
-                        <label class="price__label">
-                           <div class="label__span">Min</div>
-                           <input type="number" min="0" max="100000" placeholder="0" class="price__input" id="input-0"></input>
-                        </label>
-                        <label class="price__label">
-                           <div class="label__span">Max</div>
-                           <input type="number" min="0" max="100000" placeholder="100000" class="price__input" id="input-1"></input>
-                        </label>
-                     </div>
-                  </div>
-                  <div class="side__buttons">
-                     <button class="button" type="button" id="frutButton">Apply</button>
-                     <button class="button-reset" type="reset">Reset</button>
-                  </div>
-               </form>
-               <div class="main__content">
-                  <div id="data-1" class="body-content">
-                     <div class="grid-content">
-                        <article class="best__article">
-                           <a href="#" class="best__image"><img src="../image/best/card.png" alt="" class="best__image"></a>
-                           <span class="discount">- 36 %</span>
-                           <h4 class="best__title">Product Title</h4>
-                           <p class="best__text">Space for a small product description </p>
-                           <div class="rating" data-total-value="0">
-                              <div class="rating__item" data-item-value="5">★</div>
-                              <div class="rating__item" data-item-value="4">★</div>
-                              <div class="rating__item" data-item-value="3">★</div>
-                              <div class="rating__item" data-item-value="2">★</div>
-                              <div class="rating__item" data-item-value="1">★</div>
-                           </div>
-                           <div class="best__price">
-                              <p class="best__number">1.48 USD</p>
-                              <span>48.56</span>
-                              <button class="best__button">Buy now</button>
-                           </div>
-                        </article>
-                        <article class="best__article">
-                           <a href="#" class="best__image"><img src="../image/best/card.png" alt="" class="best__image"></a>
-                           <span class="discount">- 36 %</span>
-                           <h4 class="best__title">Product Title</h4>
-                           <p class="best__text">Space for a small product description </p>
-                           <div class="rating" data-total-value="0">
-                              <div class="rating__item" data-item-value="5">★</div>
-                              <div class="rating__item" data-item-value="4">★</div>
-                              <div class="rating__item" data-item-value="3">★</div>
-                              <div class="rating__item" data-item-value="2">★</div>
-                              <div class="rating__item" data-item-value="1">★</div>
-                           </div>
-                           <div class="best__price">
-                              <p class="best__number">1.48 USD</p>
-                              <span>48.56</span>
-                              <button class="best__button">Buy now</button>
-                           </div>
-                        </article>
-                        <article class="best__article">
-                           <a href="#" class="best__image"><img src="../image/best/card.png" alt="" class="best__image"></a>
-                           <span class="discount">- 36 %</span>
-                           <h4 class="best__title">Product Title</h4>
-                           <p class="best__text">Space for a small product description </p>
-                           <div class="rating" data-total-value="0">
-                              <div class="rating__item" data-item-value="5">★</div>
-                              <div class="rating__item" data-item-value="4">★</div>
-                              <div class="rating__item" data-item-value="3">★</div>
-                              <div class="rating__item" data-item-value="2">★</div>
-                              <div class="rating__item" data-item-value="1">★</div>
-                           </div>
-                           <div class="best__price">
-                              <p class="best__number">1.48 USD</p>
-                              <span>48.56</span>
-                              <button class="best__button">Buy now</button>
-                           </div>
-                        </article>
-                        <article class="best__article">
-                           <a href="#" class="best__image"><img src="../image/best/card.png" alt="" class="best__image"></a>
-                           <span class="discount">- 36 %</span>
-                           <h4 class="best__title">Product Title</h4>
-                           <p class="best__text">Space for a small product description </p>
-                           <div class="rating" data-total-value="0">
-                              <div class="rating__item" data-item-value="5">★</div>
-                              <div class="rating__item" data-item-value="4">★</div>
-                              <div class="rating__item" data-item-value="3">★</div>
-                              <div class="rating__item" data-item-value="2">★</div>
-                              <div class="rating__item" data-item-value="1">★</div>
-                           </div>
-                           <div class="best__price">
-                              <p class="best__number">1.48 USD</p>
-                              <span>48.56</span>
-                              <button class="best__button">Buy now</button>
-                           </div>
-                        </article>
-                     </div>
-                  </div>
-
-                  <div id="data-2" class="body-content">
-                    <div class="line-content">
-                     <article class="line-item">
-                        <div class="line-image">
-                           <img src="../image/blog/dinner.png" alt="">
-                        </div>
-                           <div class="line__body">
-                               <div class="line-left">
-                                 <h4 class="title">Product title</h4>
-                                 <p class="best__text">Space for a small product description </p>
-                                 <div class="rating" data-total-value="0">
-                                    <div class="rating__item" data-item-value="5">★</div>
-                                    <div class="rating__item" data-item-value="4">★</div>
-                                    <div class="rating__item" data-item-value="3">★</div>
-                                    <div class="rating__item" data-item-value="2">★</div>
-                                    <div class="rating__item" data-item-value="1">★</div>
-                                 </div>
-                               
-                                 <div class="left__decriptions">
-                                    <ul>
-                                       <li>Fresheness</li>
-                                       <li>Farm</li>
-                                       <li>Delivery</li>
-                                       <li>Stock</li>
-                                    </ul>
-                                    <ul>
-                                       <li><span>New</span>(Extra fresh)</li>
-                                       <li>Grocery Tarm Fields</li>
-                                       <li>Europe</li>
-                                       <li><span>320 pcs</span></li>
-                                    </ul>
-                                 </div>
-                               </div>
-                                <div class="line-right">
-                                    <p class="best__number">1.48 USD</p>
-                                    <span>48.56</span>
-                                    <p class="right-delivery">Free Shipping<span>Delivery in 1 day</span></p>
-                                    <a href="#" class="best__button">Product Detail</a>
-                                    <button class="right-wish">Add to wish list</button>
-                                </div>
-                           </div>
-                     </article>
-                     <article class="line-item">
-                        <div class="line-image">
-                           <img src="../image/blog/dinner.png" alt="">
-                        </div>
-                           <div class="line__body">
-                               <div class="line-left">
-                                 <h4 class="title">Product title</h4>
-                                 <p class="best__text">Space for a small product description </p>
-                                 <div class="rating" data-total-value="0">
-                                    <div class="rating__item" data-item-value="5">★</div>
-                                    <div class="rating__item" data-item-value="4">★</div>
-                                    <div class="rating__item" data-item-value="3">★</div>
-                                    <div class="rating__item" data-item-value="2">★</div>
-                                    <div class="rating__item" data-item-value="1">★</div>
-                                 </div>
-                               
-                                 <div class="left__decriptions">
-                                    <ul>
-                                       <li>Fresheness</li>
-                                       <li>Farm</li>
-                                       <li>Delivery</li>
-                                       <li>Stock</li>
-                                    </ul>
-                                    <ul>
-                                       <li><span>New</span>(Extra fresh)</li>
-                                       <li>Grocery Tarm Fields</li>
-                                       <li>Europe</li>
-                                       <li><span>320 pcs</span></li>
-                                    </ul>
-                                 </div>
-                               </div>
-                                <div class="line-right">
-                                    <p class="best__number">1.48 USD</p>
-                                    <span>48.56</span>
-                                    <p class="right-delivery">Free Shipping<span>Delivery in 1 day</span></p>
-                                    <a href="#" class="best__button">Product Detail</a>
-                                    <button class="right-wish">Add to wish list</button>
-                                </div>
-                           </div>
-                     </article>
-                     <article class="line-item">
-                        <div class="line-image">
-                           <img src="../image/blog/dinner.png" alt="">
-                        </div>
-                           <div class="line__body">
-                               <div class="line-left">
-                                 <h4 class="title">Product title</h4>
-                                 <p class="best__text">Space for a small product description </p>
-                                 <div class="rating" data-total-value="0">
-                                    <div class="rating__item" data-item-value="5">★</div>
-                                    <div class="rating__item" data-item-value="4">★</div>
-                                    <div class="rating__item" data-item-value="3">★</div>
-                                    <div class="rating__item" data-item-value="2">★</div>
-                                    <div class="rating__item" data-item-value="1">★</div>
-                                 </div>
-                               
-                                 <div class="left__decriptions">
-                                    <ul>
-                                       <li>Fresheness</li>
-                                       <li>Farm</li>
-                                       <li>Delivery</li>
-                                       <li>Stock</li>
-                                    </ul>
-                                    <ul>
-                                       <li><span>New</span>(Extra fresh)</li>
-                                       <li>Grocery Tarm Fields</li>
-                                       <li>Europe</li>
-                                       <li><span>320 pcs</span></li>
-                                    </ul>
-                                 </div>
-                               </div>
-                                <div class="line-right">
-                                    <p class="best__number">1.48 USD</p>
-                                    <span>48.56</span>
-                                    <p class="right-delivery">Free Shipping<span>Delivery in 1 day</span></p>
-                                    <a href="#" class="best__button">Product Detail</a>
-                                    <button class="right-wish">Add to wish list</button>
-                                </div>
-                           </div>
-                     </article>
-                     <article class="line-item">
-                        <div class="line-image">
-                           <img src="../image/blog/dinner.png" alt="">
-                        </div>
-                           <div class="line__body">
-                               <div class="line-left">
-                                 <h4 class="title">Product title</h4>
-                                 <p class="best__text">Space for a small product description </p>
-                                 <div class="rating" data-total-value="0">
-                                    <div class="rating__item" data-item-value="5">★</div>
-                                    <div class="rating__item" data-item-value="4">★</div>
-                                    <div class="rating__item" data-item-value="3">★</div>
-                                    <div class="rating__item" data-item-value="2">★</div>
-                                    <div class="rating__item" data-item-value="1">★</div>
-                                 </div>
-                               
-                                 <div class="left__decriptions">
-                                    <ul>
-                                       <li>Fresheness</li>
-                                       <li>Farm</li>
-                                       <li>Delivery</li>
-                                       <li>Stock</li>
-                                    </ul>
-                                    <ul>
-                                       <li><span>New</span>(Extra fresh)</li>
-                                       <li>Grocery Tarm Fields</li>
-                                       <li>Europe</li>
-                                       <li><span>320 pcs</span></li>
-                                    </ul>
-                                 </div>
-                               </div>
-                                <div class="line-right">
-                                    <p class="best__number">1.48 USD</p>
-                                    <span>48.56</span>
-                                    <p class="right-delivery">Free Shipping<span>Delivery in 1 day</span></p>
-                                    <a href="#" class="best__button">Product Detail</a>
-                                    <button class="right-wish">Add to wish list</button>
-                                </div>
-                           </div>
-                     </article>
-                     <article class="line-item">
-                        <div class="line-image">
-                           <img src="../image/blog/dinner.png" alt="">
-                        </div>
-                           <div class="line__body">
-                               <div class="line-left">
-                                 <h4 class="title">Product title</h4>
-                                 <p class="best__text">Space for a small product description </p>
-                                 <div class="rating" data-total-value="0">
-                                    <div class="rating__item" data-item-value="5">★</div>
-                                    <div class="rating__item" data-item-value="4">★</div>
-                                    <div class="rating__item" data-item-value="3">★</div>
-                                    <div class="rating__item" data-item-value="2">★</div>
-                                    <div class="rating__item" data-item-value="1">★</div>
-                                 </div>
-                               
-                                 <div class="left__decriptions">
-                                    <ul>
-                                       <li>Fresheness</li>
-                                       <li>Farm</li>
-                                       <li>Delivery</li>
-                                       <li>Stock</li>
-                                    </ul>
-                                    <ul>
-                                       <li><span>New</span>(Extra fresh)</li>
-                                       <li>Grocery Tarm Fields</li>
-                                       <li>Europe</li>
-                                       <li><span>320 pcs</span></li>
-                                    </ul>
-                                 </div>
-                               </div>
-                                <div class="line-right">
-                                    <p class="best__number">1.48 USD</p>
-                                    <span>48.56</span>
-                                    <p class="right-delivery">Free Shipping<span>Delivery in 1 day</span></p>
-                                    <a href="#" class="best__button">Product Detail</a>
-                                    <button class="right-wish">Add to wish list</button>
-                                </div>
-                           </div>
-                     </article>
+              <div class="bkg-modal">
+                <div class="basket-modal">
+                  <h3 class="modal__title">Shopping cart</h3>
+                  <div class="modal__body"></div>
+                  <div class="modal__total">
+                    <div class="total__subtotal">
+                      <h4>Subtotal</h4>
+                      <span class="total__total-price">0</span>
+                      <span>USD</span>
+                    </div>
+                    <div class="total__buttons">
+                      <button class="continue close-modal">
+                        Continue shopping
+                      </button>
+                      <button class="Checkout">Go to Checkout</button>
                     </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-         </section>
-         <div class="more container">
-            <div class="page__block">
-               <p>Page:</p>
-               <ul class="page-number">
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-               </ul>
+          </div>
+        </div>
+        <section class="chapters">
+          <div class="container">
+            <ul class="chapter__list">
+              <li>
+                <a href="#">Bakery</a>
+              </li>
+              <li>
+                <a
+                  class="link-fruit"
+                  href="fruits/fruit.html"
+                  style="color: red"
+                  >Fruit and vegetables</a
+                >
+              </li>
+              <li>
+                <a href="#">Meat and fish</a>
+              </li>
+              <li>
+                <a href="#">Drinks</a>
+              </li>
+              <li>
+                <a href="#">Kitchen</a>
+              </li>
+              <li>
+                <a href="#">Special nutrition</a>
+              </li>
+              <li>
+                <a href="#">Baby</a>
+              </li>
+              <li>
+                <a href="#">Pharmacy</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </header>
+      <main>
+        <div class="top-body container">
+          <h2>Fruit and vegetables</h2>
+          <div class="how-view">
+            <p class="tab-link grid" data-tabs="#data-1">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.334 1.33331H2.66732C1.93094 1.33331 1.33398 1.93027 1.33398 2.66665V13.3333C1.33398 14.0697 1.93094 14.6666 2.66732 14.6666H13.334C14.0704 14.6666 14.6673 14.0697 14.6673 13.3333V2.66665C14.6673 1.93027 14.0704 1.33331 13.334 1.33331Z"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.33398 8H14.6673"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 1.33331V14.6666"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Grid view
+            </p>
+            <p class="tab-link list" data-tabs="#data-2">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.334 1.33331H2.66732C1.93094 1.33331 1.33398 1.93027 1.33398 2.66665V13.3333C1.33398 14.0697 1.93094 14.6666 2.66732 14.6666H13.334C14.0704 14.6666 14.6673 14.0697 14.6673 13.3333V2.66665C14.6673 1.93027 14.0704 1.33331 13.334 1.33331Z"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.33398 4.66663H14.6673"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.33398 8H14.6673"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.33398 11.3333H14.6673"
+                  stroke="inherit"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              List view
+            </p>
+            <div class="prod-block">
+              <span class="sml-green">21</span>
+              <p class="prodacts">Products</p>
             </div>
-            <button class="best__button">Show more products</button>
-            <p class="more__amount"><span>336</span>Products</p>
-         </div>
+          </div>
+        </div>
+        <div class="form__container container">
+          <form action="#" method="#" class="top-form">
+            <div class="filter__radio">
+              <div class="filter__item">
+                <label for="filter-radio-1" class="discr">Filtre text</label>
+                <input
+                  id="filter-radio-1"
+                  class="radio"
+                  checked
+                  type="radio"
+                  name="howFilter"
+                  value="byType"
+                />
+                <span class="fake"></span>
+              </div>
+              <div class="filter__item">
+                <label for="filter-radio-2" class="discr">Filtre text</label>
+                <input
+                  id="filter-radio-2"
+                  class="radio"
+                  type="radio"
+                  name="howFilter"
+                  value="byType"
+                />
+                <span class="fake"></span>
+              </div>
+            </div>
+            <div class="filter__checkbox">
+              <input
+                type="checkbox"
+                name="ckeck"
+                value="yes"
+                id="checkbox-1"
+                class="checkbox__input"
+              />
+              <span class="checkbox__fake"></span>
+              <label for="checkbox-1" class="discr">Filtre</label>
+              <p class="nbm">Nbm</p>
+            </div>
+            <div class="filter__checkbox">
+              <input
+                type="checkbox"
+                name="ckeck"
+                value="yes"
+                id="checkbox-2"
+                class="checkbox__input"
+              />
+              <span class="checkbox__fake"></span>
+              <label for="checkbox-2" class="discr">Filtre</label>
+              <p class="nbm">Nbm</p>
+            </div>
+            <div>
+              <div class="filter__wrapper">
+                <div class="filter__checkbox">
+                  <input
+                    type="checkbox"
+                    name="ckeck"
+                    value="yes"
+                    id="checkbox-3"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="checkbox-3" class="discr">Filtre</label>
+                  <p class="nbm">12</p>
+                </div>
+                <div class="filter__select">
+                  <select name="select" id="#">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <section class="shop__content">
+          <div class="shop-body container">
+            <div class="side__bar-open"><span></span></div>
+            <form class="side__bar">
+              <div class="side-category def-list">
+                <h4 class="title">Categories</h4>
+                <div class="side-item">
+                  <p>Category name</p>
+                  <span class="sml-green">320</span>
+                </div>
+                <div class="side-item">
+                  <p>Category name</p>
+                  <span class="sml-green">320</span>
+                </div>
+                <div class="side-item">
+                  <p>Category name</p>
+                  <span class="sml-green">320</span>
+                </div>
+                <div class="side-item">
+                  <p>Category name</p>
+                  <span class="sml-green">320</span>
+                </div>
+              </div>
+              <div class="side-brands def-list">
+                <h4 class="title">Brands</h4>
+                <div class="brands-item">
+                  <input
+                    type="checkbox"
+                    name="ckeck"
+                    value="yes"
+                    id="brands-1"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="brands-1" class="discr"
+                    >Filtre by brand item</label
+                  >
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="checkbox"
+                    name="ckeck"
+                    value="yes"
+                    id="brands-2"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="brands-2" class="discr"
+                    >Filtre by brand item</label
+                  >
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="checkbox"
+                    name="ckeck"
+                    value="yes"
+                    id="brands-3"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="brands-3" class="discr"
+                    >Filtre by brand item</label
+                  >
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="checkbox"
+                    name="ckeck"
+                    value="yes"
+                    id="brands-4"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="brands-4" class="discr"
+                    >Filtre by brand item</label
+                  >
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="checkbox"
+                    name="ckeck"
+                    value="yes"
+                    id="brands-5"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="brands-5" class="discr"
+                    >Filtre by brand item</label
+                  >
+                </div>
+              </div>
+              <div class="side__rating def-list">
+                <h4 class="title">Rating</h4>
+                <div class="brands-item">
+                  <input
+                    type="radio"
+                    checked
+                    name="ckeck"
+                    value="yes"
+                    id="rating-1"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="rating-1" class="discr">
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                  </label>
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="radio"
+                    name="ckeck"
+                    value="yes"
+                    id="rating-2"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="rating-2" class="discr">
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                  </label>
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="radio"
+                    name="ckeck"
+                    value="yes"
+                    id="rating-3"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="rating-3" class="discr">
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                  </label>
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="radio"
+                    name="ckeck"
+                    value="yes"
+                    id="rating-4"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="rating-4" class="discr">
+                    <img src="image/star.svg" alt="" />
+                    <img src="image/star.svg" alt="" />
+                  </label>
+                </div>
+                <div class="brands-item">
+                  <input
+                    type="radio"
+                    name="ckeck"
+                    value="yes"
+                    id="rating-5"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__fake"></span>
+                  <label for="rating-5" class="discr">
+                    <img src="image/star.svg" alt="" />
+                  </label>
+                </div>
+              </div>
+              <div class="side__price">
+                <h4 class="title">Price</h4>
+                <div class="price__slider" id="range-slider"></div>
+                <div class="price__inputs">
+                  <label class="price__label">
+                    <div class="label__span">Min</div>
+                    <input
+                      type="number"
+                      min="0"
+                      max="100000"
+                      placeholder="0"
+                      class="price__input"
+                      id="input-0"
+                    />
+                  </label>
+                  <label class="price__label">
+                    <div class="label__span">Max</div>
+                    <input
+                      type="number"
+                      min="0"
+                      max="100000"
+                      placeholder="100000"
+                      class="price__input"
+                      id="input-1"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="side__buttons">
+                <button class="button" type="button" id="frutButton">
+                  Apply
+                </button>
+                <button class="button-reset" type="reset">Reset</button>
+              </div>
+            </form>
+            <div class="main__content">
+              <div id="data-1" class="body-content">
+                <div class="grid-content">
+                  <article class="best__article" data-id="id-1">
+                    <a href="#" class="best__image"
+                      ><img
+                        src="../image/best/card.png"
+                        alt=""
+                        class="best__image"
+                    /></a>
+                    <span class="discount">- 36 %</span>
+                    <h4 class="best__title">Product Title</h4>
+                    <p class="best__text">
+                      Space for a small product description
+                    </p>
+                    <div class="rating" data-total-value="0">
+                      <div class="rating__item" data-item-value="5">★</div>
+                      <div class="rating__item" data-item-value="4">★</div>
+                      <div class="rating__item" data-item-value="3">★</div>
+                      <div class="rating__item" data-item-value="2">★</div>
+                      <div class="rating__item" data-item-value="1">★</div>
+                    </div>
+                    <div class="best__price">
+                      <p class="best__number">1.48 USD</p>
+                      <span>48.56</span>
+                      <button class="best__button">Buy now</button>
+                    </div>
+                  </article>
+                  <article class="best__article" data-id="id-2">
+                    <a href="#" class="best__image"
+                      ><img
+                        src="../image/best/card.png"
+                        alt=""
+                        class="best__image"
+                    /></a>
+                    <span class="discount">- 36 %</span>
+                    <h4 class="best__title">Product Title</h4>
+                    <p class="best__text">
+                      Space for a small product description
+                    </p>
+                    <div class="rating" data-total-value="0">
+                      <div class="rating__item" data-item-value="5">★</div>
+                      <div class="rating__item" data-item-value="4">★</div>
+                      <div class="rating__item" data-item-value="3">★</div>
+                      <div class="rating__item" data-item-value="2">★</div>
+                      <div class="rating__item" data-item-value="1">★</div>
+                    </div>
+                    <div class="best__price">
+                      <p class="best__number">1.48 USD</p>
+                      <span>48.56</span>
+                      <button class="best__button">Buy now</button>
+                    </div>
+                  </article>
+                  <article class="best__article" data-id="id-3">
+                    <a href="#" class="best__image"
+                      ><img
+                        src="../image/best/card.png"
+                        alt=""
+                        class="best__image"
+                    /></a>
+                    <span class="discount">- 36 %</span>
+                    <h4 class="best__title">Product Title</h4>
+                    <p class="best__text">
+                      Space for a small product description
+                    </p>
+                    <div class="rating" data-total-value="0">
+                      <div class="rating__item" data-item-value="5">★</div>
+                      <div class="rating__item" data-item-value="4">★</div>
+                      <div class="rating__item" data-item-value="3">★</div>
+                      <div class="rating__item" data-item-value="2">★</div>
+                      <div class="rating__item" data-item-value="1">★</div>
+                    </div>
+                    <div class="best__price">
+                      <p class="best__number">1.48 USD</p>
+                      <span>48.56</span>
+                      <button class="best__button">Buy now</button>
+                    </div>
+                  </article>
+                  <article class="best__article" data-id="id-4">
+                    <a href="#" class="best__image"
+                      ><img
+                        src="../image/best/card.png"
+                        alt=""
+                        class="best__image"
+                    /></a>
+                    <span class="discount">- 36 %</span>
+                    <h4 class="best__title">Product Title</h4>
+                    <p class="best__text">
+                      Space for a small product description
+                    </p>
+                    <div class="rating" data-total-value="0">
+                      <div class="rating__item" data-item-value="5">★</div>
+                      <div class="rating__item" data-item-value="4">★</div>
+                      <div class="rating__item" data-item-value="3">★</div>
+                      <div class="rating__item" data-item-value="2">★</div>
+                      <div class="rating__item" data-item-value="1">★</div>
+                    </div>
+                    <div class="best__price">
+                      <p class="best__number">1.48 USD</p>
+                      <span>48.56</span>
+                      <button class="best__button">Buy now</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div id="data-2" class="body-content">
+                <div class="line-content">
+                  <article class="line-item">
+                    <div class="line-image">
+                      <img src="../image/blog/dinner.png" alt="" />
+                    </div>
+                    <div class="line__body">
+                      <div class="line-left">
+                        <h4 class="title">Product title</h4>
+                        <p class="best__text">
+                          Space for a small product description
+                        </p>
+                        <div class="rating" data-total-value="0">
+                          <div class="rating__item" data-item-value="5">★</div>
+                          <div class="rating__item" data-item-value="4">★</div>
+                          <div class="rating__item" data-item-value="3">★</div>
+                          <div class="rating__item" data-item-value="2">★</div>
+                          <div class="rating__item" data-item-value="1">★</div>
+                        </div>
+
+                        <div class="left__decriptions">
+                          <ul>
+                            <li>Fresheness</li>
+                            <li>Farm</li>
+                            <li>Delivery</li>
+                            <li>Stock</li>
+                          </ul>
+                          <ul>
+                            <li><span>New</span>(Extra fresh)</li>
+                            <li>Grocery Tarm Fields</li>
+                            <li>Europe</li>
+                            <li><span>320 pcs</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="line-right">
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <p class="right-delivery">
+                          Free Shipping<span>Delivery in 1 day</span>
+                        </p>
+                        <a href="#" class="best__button">Product Detail</a>
+                        <button class="right-wish">Add to wish list</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="line-item">
+                    <div class="line-image">
+                      <img src="../image/blog/dinner.png" alt="" />
+                    </div>
+                    <div class="line__body">
+                      <div class="line-left">
+                        <h4 class="title">Product title</h4>
+                        <p class="best__text">
+                          Space for a small product description
+                        </p>
+                        <div class="rating" data-total-value="0">
+                          <div class="rating__item" data-item-value="5">★</div>
+                          <div class="rating__item" data-item-value="4">★</div>
+                          <div class="rating__item" data-item-value="3">★</div>
+                          <div class="rating__item" data-item-value="2">★</div>
+                          <div class="rating__item" data-item-value="1">★</div>
+                        </div>
+
+                        <div class="left__decriptions">
+                          <ul>
+                            <li>Fresheness</li>
+                            <li>Farm</li>
+                            <li>Delivery</li>
+                            <li>Stock</li>
+                          </ul>
+                          <ul>
+                            <li><span>New</span>(Extra fresh)</li>
+                            <li>Grocery Tarm Fields</li>
+                            <li>Europe</li>
+                            <li><span>320 pcs</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="line-right">
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <p class="right-delivery">
+                          Free Shipping<span>Delivery in 1 day</span>
+                        </p>
+                        <a href="#" class="best__button">Product Detail</a>
+                        <button class="right-wish">Add to wish list</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="line-item">
+                    <div class="line-image">
+                      <img src="../image/blog/dinner.png" alt="" />
+                    </div>
+                    <div class="line__body">
+                      <div class="line-left">
+                        <h4 class="title">Product title</h4>
+                        <p class="best__text">
+                          Space for a small product description
+                        </p>
+                        <div class="rating" data-total-value="0">
+                          <div class="rating__item" data-item-value="5">★</div>
+                          <div class="rating__item" data-item-value="4">★</div>
+                          <div class="rating__item" data-item-value="3">★</div>
+                          <div class="rating__item" data-item-value="2">★</div>
+                          <div class="rating__item" data-item-value="1">★</div>
+                        </div>
+
+                        <div class="left__decriptions">
+                          <ul>
+                            <li>Fresheness</li>
+                            <li>Farm</li>
+                            <li>Delivery</li>
+                            <li>Stock</li>
+                          </ul>
+                          <ul>
+                            <li><span>New</span>(Extra fresh)</li>
+                            <li>Grocery Tarm Fields</li>
+                            <li>Europe</li>
+                            <li><span>320 pcs</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="line-right">
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <p class="right-delivery">
+                          Free Shipping<span>Delivery in 1 day</span>
+                        </p>
+                        <a href="#" class="best__button">Product Detail</a>
+                        <button class="right-wish">Add to wish list</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="line-item">
+                    <div class="line-image">
+                      <img src="../image/blog/dinner.png" alt="" />
+                    </div>
+                    <div class="line__body">
+                      <div class="line-left">
+                        <h4 class="title">Product title</h4>
+                        <p class="best__text">
+                          Space for a small product description
+                        </p>
+                        <div class="rating" data-total-value="0">
+                          <div class="rating__item" data-item-value="5">★</div>
+                          <div class="rating__item" data-item-value="4">★</div>
+                          <div class="rating__item" data-item-value="3">★</div>
+                          <div class="rating__item" data-item-value="2">★</div>
+                          <div class="rating__item" data-item-value="1">★</div>
+                        </div>
+
+                        <div class="left__decriptions">
+                          <ul>
+                            <li>Fresheness</li>
+                            <li>Farm</li>
+                            <li>Delivery</li>
+                            <li>Stock</li>
+                          </ul>
+                          <ul>
+                            <li><span>New</span>(Extra fresh)</li>
+                            <li>Grocery Tarm Fields</li>
+                            <li>Europe</li>
+                            <li><span>320 pcs</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="line-right">
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <p class="right-delivery">
+                          Free Shipping<span>Delivery in 1 day</span>
+                        </p>
+                        <a href="#" class="best__button">Product Detail</a>
+                        <button class="right-wish">Add to wish list</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="line-item">
+                    <div class="line-image">
+                      <img src="../image/blog/dinner.png" alt="" />
+                    </div>
+                    <div class="line__body">
+                      <div class="line-left">
+                        <h4 class="title">Product title</h4>
+                        <p class="best__text">
+                          Space for a small product description
+                        </p>
+                        <div class="rating" data-total-value="0">
+                          <div class="rating__item" data-item-value="5">★</div>
+                          <div class="rating__item" data-item-value="4">★</div>
+                          <div class="rating__item" data-item-value="3">★</div>
+                          <div class="rating__item" data-item-value="2">★</div>
+                          <div class="rating__item" data-item-value="1">★</div>
+                        </div>
+
+                        <div class="left__decriptions">
+                          <ul>
+                            <li>Fresheness</li>
+                            <li>Farm</li>
+                            <li>Delivery</li>
+                            <li>Stock</li>
+                          </ul>
+                          <ul>
+                            <li><span>New</span>(Extra fresh)</li>
+                            <li>Grocery Tarm Fields</li>
+                            <li>Europe</li>
+                            <li><span>320 pcs</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="line-right">
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <p class="right-delivery">
+                          Free Shipping<span>Delivery in 1 day</span>
+                        </p>
+                        <a href="#" class="best__button">Product Detail</a>
+                        <button class="right-wish">Add to wish list</button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="more container">
+          <div class="page__block">
+            <p>Page:</p>
+            <ul class="page-number">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+          <button class="best__button">Show more products</button>
+          <p class="more__amount"><span>336</span>Products</p>
+        </div>
       </main>
-
-<footer>
-   <div class="container">
-      <div class="footer-top">
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-         <ul class="footer__top-list">
-            <li>
-               <a href="#">Get in touch</a>
-            </li>
-            <li>
-               <a href="#">About Us</a>
-            </li>
-            <li>
-               <a href="#">Careers</a>
-            </li>
-            <li>
-               <a href="#">Press Releases</a>
-            </li>
-            <li>
-               <a href="#">Blog</a>
-            </li>
-         </ul>
-      </div>
-      <div class="footer__midle">
-         <h4>Product tags</h4>
-         <ul class="midle__list">
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-            <li>
-               <a href="#">Beans</a>
-            </li>
-
-         </ul>
-      </div>
-      <p class="copy">Copyright © 2020 YAYA.com</p>
-   </div>
-</footer>   </div>
-   <script src="../script/basket.js"></script>
-   <script src="../script/nouislider.min.js"></script>
-   <script src="script/fruit.js"></script>
-</body>
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__top-list">
+              <li>
+                <a href="#">Get in touch</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Press Releases</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__midle">
+            <h4>Product tags</h4>
+            <ul class="midle__list">
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+              <li>
+                <a href="#">Beans</a>
+              </li>
+            </ul>
+          </div>
+          <p class="copy">Copyright © 2020 YAYA.com</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../script/basket.js"></script>
+    <script src="../script/nouislider.min.js"></script>
+    <script src="script/fruit.js"></script>
+  </body>
 </html>
