@@ -1,18 +1,38 @@
+const sideBarButton = document.querySelector('.side__bar-open');
+const sideBar = document.querySelector('.side__bar');
+const applyButton = document.querySelector('#frutButton')
+
+function openFilters () {
+   sideBarButton.addEventListener('click', () => {
+      sideBar.classList.add('show-filter')
+   })
+   
+       window.addEventListener('click', (e) => {
+          const x = e.composedPath().includes(sideBar) || e.composedPath().includes(sideBarButton);
+          if(!x){
+            sideBar.classList.remove('show-filter')
+          }
+       })
+       applyButton.addEventListener('click', () => {
+         sideBar.classList.remove('show-filter')
+       })
+}
+openFilters ();
+/*-------------------------------------------------------------------------------------------------*/
+
 const link = document.querySelector('.link-fruit');
 
 link.addEventListener('click', function(event){
    event.preventDefault();
 });
 
-const openModal = document.querySelector('.user__basket');//кнопка открытия модалки
-const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
-const modalBody = document.querySelector('.bkg-modal');//модалка
+const openModal = document.querySelector('.user__basket');
+const closeX = document.querySelector('.close-modal');
+const modalBody = document.querySelector('.bkg-modal');
 const basket = document.querySelector('.basket-modal');
  openClose();
 
     function openClose(){
-
-       
           openModal.addEventListener('click',function(e){
              modalBody.classList.add('open');
           });
@@ -58,7 +78,7 @@ tabLink.forEach(function(item){
    
  document.querySelector('.tab-link').click();
 
-
+/*-------------------------------------------------------------------------------------------------*/
 const ratingItemsList = document.querySelectorAll('.rating__item');
 const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
 

@@ -94,7 +94,7 @@
             <a href="#">Bakery</a>
          </li>
          <li>
-           <a class="link-fruit" href="fruits/fruit.html">Fruit and vegetables</a> 
+           <a class="link-fruit" href="fruits/fruit.html" style="color: red;">Fruit and vegetables</a> 
          </li>
          <li>
             <a href="#">Meat and fish</a>
@@ -192,7 +192,8 @@
          </div>
          <section class="shop__content">
             <div class="shop-body container">
-               <form  class="side__bar">
+               <div class="side__bar-open"><span></span></div>
+               <form class="side__bar">
                   <div class="side-category def-list">
                      <h4 class="title">Categories</h4>
                      <div class="side-item">
@@ -303,7 +304,7 @@
                      </div>
                   </div>
                   <div class="side__buttons">
-                     <button name="frutButton" class="button" type="button">Apply</button>
+                     <button class="button" type="button" id="frutButton">Apply</button>
                      <button class="button-reset" type="reset">Reset</button>
                   </div>
                </form>
@@ -741,6 +742,6 @@
 </footer>   </div>
    <script src="../script/basket.js"></script>
    <script src="../script/nouislider.min.js"></script>
-   <script src="../script/fruit.js"></script>
+   <script src="script/fruit.js"></script>
 </body>
 </html>
