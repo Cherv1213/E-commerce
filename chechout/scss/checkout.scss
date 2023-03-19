@@ -174,7 +174,13 @@
    }
 }
 
+.payment__body{
+   display: none;
 
-  
-   
+    &.open-payment{
+       display: block;
+       margin-top: 2rem;
+    }
+}
+
 

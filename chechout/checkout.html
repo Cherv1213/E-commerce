@@ -245,11 +245,11 @@
                   <div class="payment__items">
                     <div class="payment__item">
                       <div class="payment__name">
-                        <input type="radio" name="payment" value="creditCard" id="creditCard">
-                        <label for="creditCard">Credit card</label>
+                        <input type="radio" name="payment" value="creditCard" id="creditCard" data-payment="#credit">
+                        <label for="creditCard" id="creditCard">Credit card</label>
                         <img src="image/logos/Visa.svg" alt="creditCard">
                       </div>
-                        <ul class="payment__body">
+                        <ul class="payment__body" id="credit">
                           <li class="card-number general-inputs">
                             <label for="cardNumber">Card number</label>
                             <input id="cardNumber" type="text" placeholder="Card number">
@@ -274,11 +274,11 @@
                     </div>
                     <div class="payment__item">
                       <div class="payment__name">
-                        <input type="radio" name="payment" value="PayPal" id="PayPal">
+                        <input type="radio" name="payment" value="PayPal" id="PayPal" data-payment="#Pal">
                         <label for="PayPal">PayPal</label>
                         <img src="image/logos/PayPal.svg" alt="PayPal">
                       </div>
-                        <ul class="payment__body">
+                        <ul class="payment__body" id="Pal">
                           <li class="card-number general-inputs">
                             <label for="PayPalNumber">Card number</label>
                             <input id="PayPalNumber" type="text" placeholder="PayPal number">
@@ -303,11 +303,11 @@
                     </div>
                     <div class="payment__item">
                       <div class="payment__name">
-                        <input type="radio" name="payment" value="Bitcoin" id="BitcoinCard">
+                        <input type="radio" name="payment" value="Bitcoin" id="BitcoinCard" data-payment="#Bitcoin">
                         <label for="BitcoinCard">Bitcoin card</label>
                         <img src="image/logos/BTC.svg" alt="BitcoinCard">
                       </div>
-                        <ul class="payment__body">
+                        <ul class="payment__body" id="Bitcoin">
                           <li class="card-number general-inputs">
                             <label for="BitcoinNumber">Card number</label>
                             <input id="BitcoinNumber" type="text" placeholder="Bitcoin number">
