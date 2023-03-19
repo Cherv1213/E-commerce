@@ -36,8 +36,6 @@ const paymentBody = document.querySelectorAll('.payment__body');
          item.classList.remove('open-payment');
       });
 
-      tabTarget.classList.add('open-payment');
-
       paymentBody.forEach((item) => {
          item.classList.remove('open-payment');
       });

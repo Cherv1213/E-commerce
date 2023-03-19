@@ -34,7 +34,7 @@
       margin-bottom: 0.3rem;
       display: block;
    }
-   input{
+   input,textarea{
       width: 100%;
       padding: 11px 1rem;
       background-color: #F9F9F9;
@@ -46,6 +46,9 @@
       }
    }
 }
+textarea {
+   resize: none;
+}
 /*-------------------------------------------------------------------------------------------------*/
 .checkout__body {
    padding: 1rem 0 2rem;
@@ -56,10 +59,11 @@
    }
    
 }
-.checkout__form {
+.checkout__form > div:not(:last-child) {
+   margin-bottom: 4rem;
 }
 .billing__info {
-   margin-bottom: 4rem;
+   
 }
 .billing {
 }
@@ -88,7 +92,6 @@
 }
 /*-------------------------------------------------------------------------------------------------*/
 .billing-method {
-   margin-bottom: 4rem;
 }
 .method {
 }
@@ -134,6 +137,8 @@
 }
 
 /*-------------------------------------------------------------------------------------------------*/
+.payment{
+}
 .payment__items {
    display: flex;
    flex-direction: column;
@@ -152,9 +157,11 @@
    label{
       position: absolute;
       top: 50%;
-      left: 2rem;
+      left: 0;
       transform: translateY(-50%);
       width: 90%;
+      line-height: 50px;
+      padding-left: 2rem;
    }
    img{
       margin-left: auto;
@@ -183,4 +190,59 @@
     }
 }
 
+/*-------------------------------------------------------------------------------------------------*/
+.confirmation{
+   margin-bottom: 2rem !important;
+}
+.confirmation-checkbox{
+   display: flex;
+   align-items: center;
+   padding: 11px 1rem;
+   background-color: #F9F9F9;
+   border: 1px solid #D1D1D1;
+   border-radius: 12px;
+   width: max-content;
+   input{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 10px;
+      
+   }
+   label{
+      @extend .main-text;
+      color: #151515;
+   }
+   &:not(:last-child){
+      margin-bottom: 1rem;
+   }
+}
 
+.form-button{
+   padding: 1rem 3rem;
+   margin-bottom: 2rem;
+}
+/*-------------------------------------------------------------------------------------------------*/
+.secure{
+   max-width: 13.3rem;
+   &::before{
+      content: url(../image/logos/security.svg);
+      display: block;
+      margin-bottom: 0.8rem;
+   }
+   h5{
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 0.6rem;
+   }
+   p{
+      @extend .main-text;
+   }
+}
+/*--------------------------footer-----------------------------------------------------------------------*/
+footer{
+   .container{
+      p{
+         font-family: 'Open Sans';
+      }
+   }
+}
