@@ -19,13 +19,6 @@ function openFilters () {
 }
 openFilters ();
 /*-------------------------------------------------------------------------------------------------*/
-
-const link = document.querySelector('.link-fruit');
-
-link.addEventListener('click', function(event){
-   event.preventDefault();
-});
-
 const openModal = document.querySelector('.user__basket');
 const closeX = document.querySelector('.close-modal');
 const modalBody = document.querySelector('.bkg-modal');
@@ -124,3 +117,24 @@ if(rangeSlider){
    });
   });
 }
+/*-------------------------------------------------------------------------------------------------*/
+
+const gridBody = document.querySelector('.grid');
+const lineBody = document.querySelector('.list');
+const gridLength = document.querySelector('.grid-content').children.length;
+const listLength = document.querySelector('.line-content').children.length;
+const amountProd = document.querySelector('.more__amount span');
+
+   function calcproducts(butt,leng) {
+      butt.addEventListener('click', () => {
+         amountProd.innerHTML = leng;
+      })
+   }
+   calcproducts(gridBody,gridLength);
+   calcproducts(lineBody,listLength);
+
+ 
+
+
+
+

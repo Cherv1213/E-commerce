@@ -1,7 +1,4 @@
-const link = document.querySelector(".middle__image");
-link.addEventListener("click", function (event) {
-  event.preventDefault();
-});
+
 /*-------------------------------------------------------------------------------------------------*/
 const openModal = document.querySelector(".user__basket");
 const modalBody = document.querySelector(".bkg-modal");
