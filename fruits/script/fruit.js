@@ -124,10 +124,12 @@ const lineBody = document.querySelector('.list');
 const gridLength = document.querySelector('.grid-content').children.length;
 const listLength = document.querySelector('.line-content').children.length;
 const amountProd = document.querySelector('.more__amount span');
+const prodacts = document.querySelector('.sml-green');
 
    function calcproducts(butt,leng) {
       butt.addEventListener('click', () => {
          amountProd.innerHTML = leng;
+         prodacts.innerHTML = leng;
       })
    }
    calcproducts(gridBody,gridLength);
