@@ -42,3 +42,11 @@ const paymentBody = document.querySelectorAll('.payment__body');
 
       document.querySelector(`${payment}`).classList.add('open-payment');
    }
+   /*-------------------------------------------------------------------------------------------------*/
+   $(document).ready(function() {
+      $('.js-example-basic-single').select2({
+         placeholder: "Choose a state or Country",
+      allowClear: true
+      });
+      
+  })

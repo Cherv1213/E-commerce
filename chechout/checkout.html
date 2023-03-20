@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="" type="image/gif" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/checkout.css" />
     <title>Checkout page</title>
   </head>
@@ -219,11 +226,16 @@
                     </li>
                     <li>
                       <label for="stateCountry">State / Country</label>
-                      <input
+                      <select
+                        class="js-example-basic-single"
+                        name="state"
                         id="stateCountry"
-                        type="text"
-                        placeholder="Choose a state or Country"
-                      />
+                      >
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
                     </li>
                     <li>
                       <label for="pos">ZIP/Postal code</label>
@@ -501,143 +513,154 @@
             </form>
             <aside class="aside-order">
               <h3 class="aside-order__title">Order Summary</h3>
-              <p>Price can change depending on shipping method and taxes of your state.</p>
+              <p>
+                Price can change depending on shipping method and taxes of your
+                state.
+              </p>
               <article class="modal-card" data-id="">
                 <div class="card__left">
-                   <img src="image/card.png" alt="image">
-                   <div class="card__what-todo">
-                      <div class="card__item item-wish">Wishlist</div>
-                      <div class="card__item item-compare">Compare</div>
-                      <div class="card__item item-remove">Remove</div>
-                   </div>
+                  <img src="image/card.png" alt="image" />
+                  <div class="card__what-todo">
+                    <div class="card__item item-wish">Wishlist</div>
+                    <div class="card__item item-compare">Compare</div>
+                    <div class="card__item item-remove">Remove</div>
+                  </div>
                 </div>
                 <div class="card__right">
-                   <div class="card__text">
-                      <h4 class="best__title">Product title</h4>
-                      <div class="card__info">
-                         <p class="card__farm"><span>Farm:</span>Tharamis Farm</p>
-                         <p class="card__farm"><span>Freshness:</span>1 day old</p>
-                      </div>
-                   </div>
-                   <div class="rating" data-total-value="0">
-                      <div class="rating__item" data-item-value="5">★</div>
-                      <div class="rating__item" data-item-value="4">★</div>
-                      <div class="rating__item" data-item-value="3">★</div>
-                      <div class="rating__item" data-item-value="2">★</div>
-                      <div class="rating__item" data-item-value="1">★</div>
-                   </div>
-                   <div class="bottom">
-                      <p class="best__number card__price">36.99 USD</p>
-                      <div class="card__pcs">
-                         <div class="pcs__count">1 Pcs</div>
-                         <select name="Pcs" id="">
-                            <option value="Pcs">Pcs</option>
-                            <option value="Pcs">1</option>
-                            <option value="Pcs">2</option>
-                         </select>
-                      </div>
-                   </div>
+                  <div class="card__text">
+                    <h4 class="best__title">Product title</h4>
+                    <div class="card__info">
+                      <p class="card__farm"><span>Farm:</span>Tharamis Farm</p>
+                      <p class="card__farm"><span>Freshness:</span>1 day old</p>
+                    </div>
+                  </div>
+                  <div class="rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
+                  </div>
+                  <div class="bottom">
+                    <p class="best__number card__price">36.99 USD</p>
+                    <div class="card__pcs">
+                      <div class="pcs__count">1 Pcs</div>
+                      <select name="Pcs" id="">
+                        <option value="Pcs">Pcs</option>
+                        <option value="Pcs">1</option>
+                        <option value="Pcs">2</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-             </article>
+              </article>
               <article class="modal-card" data-id="">
                 <div class="card__left">
-                   <img src="image/card.png" alt="image">
-                   <div class="card__what-todo">
-                      <div class="card__item item-wish">Wishlist</div>
-                      <div class="card__item item-compare">Compare</div>
-                      <div class="card__item item-remove">Remove</div>
-                   </div>
+                  <img src="image/card.png" alt="image" />
+                  <div class="card__what-todo">
+                    <div class="card__item item-wish">Wishlist</div>
+                    <div class="card__item item-compare">Compare</div>
+                    <div class="card__item item-remove">Remove</div>
+                  </div>
                 </div>
                 <div class="card__right">
-                   <div class="card__text">
-                      <h4 class="best__title">Product title</h4>
-                      <div class="card__info">
-                         <p class="card__farm"><span>Farm:</span>Tharamis Farm</p>
-                         <p class="card__farm"><span>Freshness:</span>1 day old</p>
-                      </div>
-                   </div>
-                   <div class="rating" data-total-value="0">
-                      <div class="rating__item" data-item-value="5">★</div>
-                      <div class="rating__item" data-item-value="4">★</div>
-                      <div class="rating__item" data-item-value="3">★</div>
-                      <div class="rating__item" data-item-value="2">★</div>
-                      <div class="rating__item" data-item-value="1">★</div>
-                   </div>
-                   <div class="bottom">
-                      <p class="best__number card__price">36.99 USD</p>
-                      <div class="card__pcs">
-                         <div class="pcs__count">1 Pcs</div>
-                         <select name="Pcs" id="">
-                            <option value="Pcs">Pcs</option>
-                            <option value="Pcs">1</option>
-                            <option value="Pcs">2</option>
-                         </select>
-                      </div>
-                   </div>
+                  <div class="card__text">
+                    <h4 class="best__title">Product title</h4>
+                    <div class="card__info">
+                      <p class="card__farm"><span>Farm:</span>Tharamis Farm</p>
+                      <p class="card__farm"><span>Freshness:</span>1 day old</p>
+                    </div>
+                  </div>
+                  <div class="rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
+                  </div>
+                  <div class="bottom">
+                    <p class="best__number card__price">36.99 USD</p>
+                    <div class="card__pcs">
+                      <div class="pcs__count">1 Pcs</div>
+                      <select name="Pcs" id="">
+                        <option value="Pcs">Pcs</option>
+                        <option value="Pcs">1</option>
+                        <option value="Pcs">2</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-             </article>
+              </article>
               <article class="modal-card" data-id="">
                 <div class="card__left">
-                   <img src="image/card.png" alt="image">
-                   <div class="card__what-todo">
-                      <div class="card__item item-wish">Wishlist</div>
-                      <div class="card__item item-compare">Compare</div>
-                      <div class="card__item item-remove">Remove</div>
-                   </div>
+                  <img src="image/card.png" alt="image" />
+                  <div class="card__what-todo">
+                    <div class="card__item item-wish">Wishlist</div>
+                    <div class="card__item item-compare">Compare</div>
+                    <div class="card__item item-remove">Remove</div>
+                  </div>
                 </div>
                 <div class="card__right">
-                   <div class="card__text">
-                      <h4 class="best__title">Product title</h4>
-                      <div class="card__info">
-                         <p class="card__farm"><span>Farm:</span>Tharamis Farm</p>
-                         <p class="card__farm"><span>Freshness:</span>1 day old</p>
-                      </div>
-                   </div>
-                   <div class="rating" data-total-value="0">
-                      <div class="rating__item" data-item-value="5">★</div>
-                      <div class="rating__item" data-item-value="4">★</div>
-                      <div class="rating__item" data-item-value="3">★</div>
-                      <div class="rating__item" data-item-value="2">★</div>
-                      <div class="rating__item" data-item-value="1">★</div>
-                   </div>
-                   <div class="bottom">
-                      <p class="best__number card__price">36.99 USD</p>
-                      <div class="card__pcs">
-                         <div class="pcs__count">1 Pcs</div>
-                         <select name="Pcs" id="">
-                            <option value="Pcs">Pcs</option>
-                            <option value="Pcs">1</option>
-                            <option value="Pcs">2</option>
-                         </select>
-                      </div>
-                   </div>
+                  <div class="card__text">
+                    <h4 class="best__title">Product title</h4>
+                    <div class="card__info">
+                      <p class="card__farm"><span>Farm:</span>Tharamis Farm</p>
+                      <p class="card__farm"><span>Freshness:</span>1 day old</p>
+                    </div>
+                  </div>
+                  <div class="rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
+                  </div>
+                  <div class="bottom">
+                    <p class="best__number card__price">36.99 USD</p>
+                    <div class="card__pcs">
+                      <div class="pcs__count">1 Pcs</div>
+                      <select name="Pcs" id="">
+                        <option value="Pcs">Pcs</option>
+                        <option value="Pcs">1</option>
+                        <option value="Pcs">2</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-             </article>
-             <div class="aside-order__bottom">
-              <table class="bottom-total__price">
-                <tr>
-                  <td>Subtotal</td>
-                  <td>73.98 USD</td>
-                </tr>
-                <tr>
-                  <td>Tax</td>
-                  <td>17% 16.53 USD</td>
-                </tr>
-                <tr>
-                  <td>Shipping</td>
-                  <td>0 USD</td>
-                </tr>
-              </table>
-              <form class="promo-form" action="#" method="#">
-                <label for="promo"></label>
-                <input id="promo" type="text" placeholder="Apply promo code">
-                <button type="button">Apply now</button>
-              </form>
-              <div class="total-order">
-                <p>Total Order<span>Guaranteed delivery day:  June 12, 2020</span></p>
-                <p class="full-price">89.84 USD</p>
+              </article>
+              <div class="aside-order__bottom">
+                <table class="bottom-total__price">
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>73.98 USD</td>
+                  </tr>
+                  <tr>
+                    <td>Tax</td>
+                    <td>17% 16.53 USD</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping</td>
+                    <td>0 USD</td>
+                  </tr>
+                </table>
+                <form class="promo-form" action="#" method="#">
+                  <label for="promo"></label>
+                  <input
+                    id="promo"
+                    type="text"
+                    placeholder="Apply promo code"
+                  />
+                  <button type="button">Apply now</button>
+                </form>
+                <div class="total-order">
+                  <p>
+                    Total Order<span
+                      >Guaranteed delivery day: June 12, 2020</span
+                    >
+                  </p>
+                  <p class="full-price">89.84 USD</p>
+                </div>
               </div>
-             </div>
             </aside>
           </div>
         </div>
@@ -648,6 +671,17 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+      integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script/checkout.js"></script>
     <script src="script/basket.js"></script>
   </body>
